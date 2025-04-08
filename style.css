@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #ffa41b, #4f7fff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    flex-direction: column;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav a.active {
+    color: #ff8118;
+}
+
+.form-container {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    width: 100%;
+    max-width: 400px;  /* Diminuído o tamanho do formulário */
+    text-align: center;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    margin-top: 20px;
+}
+
+h2 {
+    color: white;
+    font-size: 22px;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 10px #ff8118;
+    margin-bottom: 10px;
+}
+
+.form-group {
+    margin-bottom: 12px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-size: 13px;
+    color: white;
+    margin-bottom: 5px;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    background: rgba(255, 255, 255, 0.8);
+    color: #333;
+    transition: 0.3s;
+}
+
+input:focus, textarea:focus, select:focus {
+    box-shadow: 0 0 8px #ff8118;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: #4f7fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background: #ff8118;
+    box-shadow: 0px 0px 8px #ffa41b;
+}
+
+.add-responsavel {
+    display: inline-block;
+    margin-top: 10px;
+    color: #ffffff;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.add-responsavel:hover {
+    text-decoration: underline;
+}
+
+.form-container::before {
+    content: "🐾";
+    font-size: 40px;
+    display: block;
+    color: white;
+    text-shadow: 0px 0px 10px #ff8118;
+    margin-bottom: 10px;
+}
